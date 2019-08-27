@@ -19,49 +19,56 @@ namespace 寝室反馈生成
         {
             InitializeComponent();
         }
-
         private void Form1_Load(object sender, EventArgs e)
         {
-            LQS1.Text = "此行无用";
-            LQS2.Text = "此行无用";
-            LQS3.Text = "此行无用";
-            LQS4.Text = "此行无用";
-            LQS5.Text = "此行无用";
-            LQS6.Text = "此行无用";
-            LQS7.Text = "此行无用";
-            LQS8.Text = "此行无用";
+            #region 给label寝室号
+            string sss = "此行无用";
+            LQS1.Text = sss;
+            LQS2.Text = sss;
+            LQS3.Text = sss;
+            LQS4.Text = sss;
+            LQS5.Text = sss;
+            LQS6.Text = sss;
+            LQS7.Text = sss;
+            LQS8.Text = sss;
+            #endregion
+            #region 新建并读取配置文件
+            //新建配置文件
             if (!File.Exists(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\QSFQSC\1.ini"))
             {
                 Directory.CreateDirectory(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\QSFQSC");
                 File.Create(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\QSFQSC\1.ini");
             }
+            //读取配置文件
             StreamReader sr = new StreamReader(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\QSFQSC\1.ini");
-            cbPath.Text = sr.ReadLine();
+            cbPath.Text = sr.ReadLine();//最近打开
             sr.Close();
             sr.Dispose();
             groupBox1.Visible = false;
             groupBox2.Visible = false;
+            #endregion
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
+            //打开CSV文件
             openFileDialog1.Filter = "Microsoft Excel 逗号分隔值文件(*.csv)|*.csv";
             openFileDialog1.Title = "请选择CSV文件";
             openFileDialog1.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
+                //读取CSV文件路径
                 cbPath.Text = openFileDialog1.FileName;
                 StreamWriter sw = new StreamWriter(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\QSFQSC\1.ini");
                 sw.WriteLine(openFileDialog1.FileName);
-                cbPath.Items.Add(openFileDialog1.FileName);
+                cbPath.Items.Add(openFileDialog1.FileName);//添加到最近打开中
                 sw.Close();
                 sw.Dispose();
             }
-
         }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
+            //读取CSV文件
             StreamReader sr = new StreamReader(cbPath.Text, Encoding.GetEncoding("gb2312"));
             data = DataHandle.ReadCSV(sr);
             sr.Close();
@@ -71,41 +78,47 @@ namespace 寝室反馈生成
             groupBox1.Visible = true;
             groupBox2.Visible = true;
         }
-
+        #region 无用
         private void label3_Click(object sender, EventArgs e)
         {
-
+            //无用
         }
 
         private void LQS1_Click(object sender, EventArgs e)
         {
-
+            //无用
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
-
+            //无用
         }
 
         private void label19_Click(object sender, EventArgs e)
         {
-
+            //无用
         }
 
         private void groupBox2_Enter(object sender, EventArgs e)
         {
-
+            //无用
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-
+            //无用
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-
+            //无用
         }
+        #endregion
+        /// <summary>
+        /// 将int转成char数组
+        /// </summary>
+        /// <param name="i">要转换的整数</param>
+        /// <returns></returns>
         private char[] SevIntToCharArray(int i)
         {
             string s = i.ToString();
@@ -114,7 +127,7 @@ namespace 寝室反馈生成
         private List<DataInFeedback> GetDatas()
         {
             List<DataInFeedback> ddd = new List<DataInFeedback>();
-            //temp.Add(new DataInFeedback());
+            //逐个将信息添加到List中
             DataInFeedback data1 = new DataInFeedback();
             data1.BedRoomNumber = LQS1.Text;
             data1.BeiBuQiNumbers = B1.Text.ToCharArray();
@@ -254,7 +267,7 @@ namespace 寝室反馈生成
         string Result = "";
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
-
+            //无用
         }
     }
 }
