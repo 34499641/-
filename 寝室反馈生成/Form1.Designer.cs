@@ -137,6 +137,7 @@
             this.M8 = new System.Windows.Forms.CheckBox();
             this.Start = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Clear = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.groupBox10.SuspendLayout();
@@ -584,7 +585,7 @@
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Location = new System.Drawing.Point(12, 45);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(957, 362);
+            this.groupBox1.Size = new System.Drawing.Size(957, 496);
             this.groupBox1.TabIndex = 57;
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
@@ -1061,9 +1062,9 @@
             this.groupBox2.Controls.Add(this.M6);
             this.groupBox2.Controls.Add(this.M7);
             this.groupBox2.Controls.Add(this.M8);
-            this.groupBox2.Location = new System.Drawing.Point(488, 0);
+            this.groupBox2.Location = new System.Drawing.Point(499, 0);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(227, 370);
+            this.groupBox2.Size = new System.Drawing.Size(216, 370);
             this.groupBox2.TabIndex = 58;
             this.groupBox2.TabStop = false;
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
@@ -1106,7 +1107,7 @@
             // 
             this.M1.AutoSize = true;
             this.M1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.M1.Location = new System.Drawing.Point(144, 25);
+            this.M1.Location = new System.Drawing.Point(117, 23);
             this.M1.Name = "M1";
             this.M1.Size = new System.Drawing.Size(78, 20);
             this.M1.TabIndex = 65;
@@ -1117,7 +1118,7 @@
             // 
             this.D2.AutoSize = true;
             this.D2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.D2.Location = new System.Drawing.Point(60, 70);
+            this.D2.Location = new System.Drawing.Point(33, 68);
             this.D2.Name = "D2";
             this.D2.Size = new System.Drawing.Size(78, 20);
             this.D2.TabIndex = 58;
@@ -1128,7 +1129,7 @@
             // 
             this.D3.AutoSize = true;
             this.D3.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.D3.Location = new System.Drawing.Point(60, 116);
+            this.D3.Location = new System.Drawing.Point(33, 114);
             this.D3.Name = "D3";
             this.D3.Size = new System.Drawing.Size(78, 20);
             this.D3.TabIndex = 59;
@@ -1139,7 +1140,7 @@
             // 
             this.D4.AutoSize = true;
             this.D4.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.D4.Location = new System.Drawing.Point(60, 160);
+            this.D4.Location = new System.Drawing.Point(33, 158);
             this.D4.Name = "D4";
             this.D4.Size = new System.Drawing.Size(78, 20);
             this.D4.TabIndex = 60;
@@ -1150,7 +1151,7 @@
             // 
             this.D6.AutoSize = true;
             this.D6.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.D6.Location = new System.Drawing.Point(60, 250);
+            this.D6.Location = new System.Drawing.Point(33, 248);
             this.D6.Name = "D6";
             this.D6.Size = new System.Drawing.Size(78, 20);
             this.D6.TabIndex = 61;
@@ -1161,7 +1162,7 @@
             // 
             this.D5.AutoSize = true;
             this.D5.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.D5.Location = new System.Drawing.Point(60, 205);
+            this.D5.Location = new System.Drawing.Point(33, 203);
             this.D5.Name = "D5";
             this.D5.Size = new System.Drawing.Size(78, 20);
             this.D5.TabIndex = 62;
@@ -1172,7 +1173,7 @@
             // 
             this.D1.AutoSize = true;
             this.D1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.D1.Location = new System.Drawing.Point(60, 25);
+            this.D1.Location = new System.Drawing.Point(33, 23);
             this.D1.Name = "D1";
             this.D1.Size = new System.Drawing.Size(78, 20);
             this.D1.TabIndex = 57;
@@ -1184,7 +1185,7 @@
             // 
             this.D7.AutoSize = true;
             this.D7.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.D7.Location = new System.Drawing.Point(60, 295);
+            this.D7.Location = new System.Drawing.Point(33, 293);
             this.D7.Name = "D7";
             this.D7.Size = new System.Drawing.Size(78, 20);
             this.D7.TabIndex = 63;
@@ -1195,7 +1196,7 @@
             // 
             this.D8.AutoSize = true;
             this.D8.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.D8.Location = new System.Drawing.Point(60, 336);
+            this.D8.Location = new System.Drawing.Point(33, 334);
             this.D8.Name = "D8";
             this.D8.Size = new System.Drawing.Size(78, 20);
             this.D8.TabIndex = 64;
@@ -1206,7 +1207,7 @@
             // 
             this.M2.AutoSize = true;
             this.M2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.M2.Location = new System.Drawing.Point(144, 70);
+            this.M2.Location = new System.Drawing.Point(117, 68);
             this.M2.Name = "M2";
             this.M2.Size = new System.Drawing.Size(78, 20);
             this.M2.TabIndex = 66;
@@ -1217,7 +1218,7 @@
             // 
             this.M3.AutoSize = true;
             this.M3.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.M3.Location = new System.Drawing.Point(144, 116);
+            this.M3.Location = new System.Drawing.Point(117, 114);
             this.M3.Name = "M3";
             this.M3.Size = new System.Drawing.Size(78, 20);
             this.M3.TabIndex = 67;
@@ -1228,7 +1229,7 @@
             // 
             this.M4.AutoSize = true;
             this.M4.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.M4.Location = new System.Drawing.Point(144, 160);
+            this.M4.Location = new System.Drawing.Point(117, 158);
             this.M4.Name = "M4";
             this.M4.Size = new System.Drawing.Size(78, 20);
             this.M4.TabIndex = 68;
@@ -1239,7 +1240,7 @@
             // 
             this.M5.AutoSize = true;
             this.M5.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.M5.Location = new System.Drawing.Point(144, 205);
+            this.M5.Location = new System.Drawing.Point(117, 203);
             this.M5.Name = "M5";
             this.M5.Size = new System.Drawing.Size(78, 20);
             this.M5.TabIndex = 69;
@@ -1250,7 +1251,7 @@
             // 
             this.M6.AutoSize = true;
             this.M6.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.M6.Location = new System.Drawing.Point(144, 250);
+            this.M6.Location = new System.Drawing.Point(117, 248);
             this.M6.Name = "M6";
             this.M6.Size = new System.Drawing.Size(78, 20);
             this.M6.TabIndex = 70;
@@ -1261,7 +1262,7 @@
             // 
             this.M7.AutoSize = true;
             this.M7.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.M7.Location = new System.Drawing.Point(144, 295);
+            this.M7.Location = new System.Drawing.Point(117, 293);
             this.M7.Name = "M7";
             this.M7.Size = new System.Drawing.Size(78, 20);
             this.M7.TabIndex = 71;
@@ -1272,7 +1273,7 @@
             // 
             this.M8.AutoSize = true;
             this.M8.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.M8.Location = new System.Drawing.Point(144, 336);
+            this.M8.Location = new System.Drawing.Point(117, 334);
             this.M8.Name = "M8";
             this.M8.Size = new System.Drawing.Size(78, 20);
             this.M8.TabIndex = 72;
@@ -1281,7 +1282,7 @@
             // 
             // Start
             // 
-            this.Start.Location = new System.Drawing.Point(835, 19);
+            this.Start.Location = new System.Drawing.Point(727, 16);
             this.Start.Name = "Start";
             this.Start.Size = new System.Drawing.Size(75, 23);
             this.Start.TabIndex = 64;
@@ -1297,11 +1298,22 @@
             this.textBox1.Size = new System.Drawing.Size(898, 108);
             this.textBox1.TabIndex = 65;
             // 
+            // Clear
+            // 
+            this.Clear.Location = new System.Drawing.Point(836, 19);
+            this.Clear.Name = "Clear";
+            this.Clear.Size = new System.Drawing.Size(75, 23);
+            this.Clear.TabIndex = 66;
+            this.Clear.Text = "清空";
+            this.Clear.UseVisualStyleBackColor = true;
+            this.Clear.Click += new System.EventHandler(this.Clear_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(974, 535);
+            this.Controls.Add(this.Clear);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.Start);
             this.Controls.Add(this.groupBox1);
@@ -1451,6 +1463,7 @@
         private System.Windows.Forms.TextBox CH1;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button Clear;
     }
 }
 

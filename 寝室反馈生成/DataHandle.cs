@@ -93,7 +93,7 @@ namespace 寝室反馈生成
         public char[] ChuangDanBuPingNumbers { get; set; }
         public bool IfDiYouYin { get; set; }
         public bool IfMenJingZang { get; set; }
-        public bool IfGoodOrOK { get; set; }
+        public BedRoomIfGoodOrOK IfGoodOrOK { get; set; }
         public char[] ChuangHaoNumber { get; set; }
     }
 }

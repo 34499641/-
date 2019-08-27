@@ -134,7 +134,23 @@ namespace 寝室反馈生成
             data1.ChuangDanBuPingNumbers = C1.Text.ToCharArray();
             data1.IfDiYouYin = D1.Checked;
             data1.IfMenJingZang = M1.Checked;
-            data1.IfGoodOrOK = H1.Checked ? true : false;
+            #region 判断状态
+            if (H1.Checked)
+            {
+                data1.IfGoodOrOK = BedRoomIfGoodOrOK.Good;
+            }
+            else
+            {
+                if (J1.Checked)
+                {
+                    data1.IfGoodOrOK = BedRoomIfGoodOrOK.OK;
+                }
+                else
+                {
+                    data1.IfGoodOrOK = BedRoomIfGoodOrOK.None;
+                }
+            }
+            #endregion
             data1.ChuangHaoNumber = CH1.Text.ToCharArray();
             /*********************************************/
             DataInFeedback data2 = new DataInFeedback();
@@ -143,7 +159,23 @@ namespace 寝室反馈生成
             data2.ChuangDanBuPingNumbers = C2.Text.ToCharArray();
             data2.IfDiYouYin = D2.Checked;
             data2.IfMenJingZang = M2.Checked;
-            data2.IfGoodOrOK = H2.Checked ? true : false;
+            #region 判断状态
+            if (H2.Checked)
+            {
+                data2.IfGoodOrOK = BedRoomIfGoodOrOK.Good;
+            }
+            else
+            {
+                if (J2.Checked)
+                {
+                    data2.IfGoodOrOK = BedRoomIfGoodOrOK.OK;
+                }
+                else
+                {
+                    data2.IfGoodOrOK = BedRoomIfGoodOrOK.None;
+                }
+            }
+            #endregion
             data2.ChuangHaoNumber = CH2.Text.ToCharArray();
             /*********************************************/
             DataInFeedback data3 = new DataInFeedback();
@@ -152,7 +184,23 @@ namespace 寝室反馈生成
             data3.ChuangDanBuPingNumbers = C3.Text.ToCharArray();
             data3.IfDiYouYin = D3.Checked;
             data3.IfMenJingZang = M3.Checked;
-            data3.IfGoodOrOK = H3.Checked ? true : false;
+            #region 判断状态
+            if (H3.Checked)
+            {
+                data3.IfGoodOrOK = BedRoomIfGoodOrOK.Good;
+            }
+            else
+            {
+                if (J3.Checked)
+                {
+                    data3.IfGoodOrOK = BedRoomIfGoodOrOK.OK;
+                }
+                else
+                {
+                    data3.IfGoodOrOK = BedRoomIfGoodOrOK.None;
+                }
+            }
+            #endregion
             data3.ChuangHaoNumber = CH3.Text.ToCharArray();
             /*********************************************/
             DataInFeedback data4 = new DataInFeedback();
@@ -161,7 +209,23 @@ namespace 寝室反馈生成
             data4.ChuangDanBuPingNumbers = C4.Text.ToCharArray();
             data4.IfDiYouYin = D4.Checked;
             data4.IfMenJingZang = M4.Checked;
-            data4.IfGoodOrOK = H4.Checked ? true : false;
+            #region 判断状态
+            if (H4.Checked)
+            {
+                data4.IfGoodOrOK = BedRoomIfGoodOrOK.Good;
+            }
+            else
+            {
+                if (J4.Checked)
+                {
+                    data4.IfGoodOrOK = BedRoomIfGoodOrOK.OK;
+                }
+                else
+                {
+                    data4.IfGoodOrOK = BedRoomIfGoodOrOK.None;
+                }
+            }
+            #endregion
             data4.ChuangHaoNumber = CH4.Text.ToCharArray();
             /*********************************************/
             DataInFeedback data5 = new DataInFeedback();
@@ -170,7 +234,23 @@ namespace 寝室反馈生成
             data5.ChuangDanBuPingNumbers = C5.Text.ToCharArray();
             data5.IfDiYouYin = D5.Checked;
             data5.IfMenJingZang = M5.Checked;
-            data5.IfGoodOrOK = H5.Checked ? true : false;
+            #region 判断状态
+            if (H5.Checked)
+            {
+                data5.IfGoodOrOK = BedRoomIfGoodOrOK.Good;
+            }
+            else
+            {
+                if (J5.Checked)
+                {
+                    data5.IfGoodOrOK = BedRoomIfGoodOrOK.OK;
+                }
+                else
+                {
+                    data5.IfGoodOrOK = BedRoomIfGoodOrOK.None;
+                }
+            }
+            #endregion
             data5.ChuangHaoNumber = CH5.Text.ToCharArray();
             /*********************************************/
             DataInFeedback data6 = new DataInFeedback();
@@ -179,7 +259,23 @@ namespace 寝室反馈生成
             data6.ChuangDanBuPingNumbers = C6.Text.ToCharArray();
             data6.IfDiYouYin = D6.Checked;
             data6.IfMenJingZang = M6.Checked;
-            data6.IfGoodOrOK = H6.Checked ? true : false;
+            #region 判断状态
+            if (H6.Checked)
+            {
+                data6.IfGoodOrOK = BedRoomIfGoodOrOK.Good;
+            }
+            else
+            {
+                if (J6.Checked)
+                {
+                    data6.IfGoodOrOK = BedRoomIfGoodOrOK.OK;
+                }
+                else
+                {
+                    data6.IfGoodOrOK = BedRoomIfGoodOrOK.None;
+                }
+            }
+            #endregion
             data6.ChuangHaoNumber = CH6.Text.ToCharArray();
             /*********************************************/
             DataInFeedback data7 = new DataInFeedback();
@@ -188,7 +284,23 @@ namespace 寝室反馈生成
             data7.ChuangDanBuPingNumbers = C7.Text.ToCharArray();
             data7.IfDiYouYin = D7.Checked;
             data7.IfMenJingZang = M7.Checked;
-            data7.IfGoodOrOK = H7.Checked ? true : false;
+            #region 判断状态
+            if (H7.Checked)
+            {
+                data7.IfGoodOrOK = BedRoomIfGoodOrOK.Good;
+            }
+            else
+            {
+                if (J7.Checked)
+                {
+                    data7.IfGoodOrOK = BedRoomIfGoodOrOK.OK;
+                }
+                else
+                {
+                    data7.IfGoodOrOK = BedRoomIfGoodOrOK.None;
+                }
+            }
+            #endregion
             data7.ChuangHaoNumber = CH7.Text.ToCharArray();
             /*********************************************/
             DataInFeedback data8 = new DataInFeedback();
@@ -197,7 +309,23 @@ namespace 寝室反馈生成
             data8.ChuangDanBuPingNumbers = C8.Text.ToCharArray();
             data8.IfDiYouYin = D8.Checked;
             data8.IfMenJingZang = M8.Checked;
-            data8.IfGoodOrOK = H8.Checked ? true : false;
+            #region 判断状态
+            if (H8.Checked)
+            {
+                data8.IfGoodOrOK = BedRoomIfGoodOrOK.Good;
+            }
+            else
+            {
+                if (J8.Checked)
+                {
+                    data8.IfGoodOrOK = BedRoomIfGoodOrOK.OK;
+                }
+                else
+                {
+                    data8.IfGoodOrOK = BedRoomIfGoodOrOK.None;
+                }
+            }
+            #endregion
             data8.ChuangHaoNumber = CH8.Text.ToCharArray();
             /*********************************************/
             ddd.Add(data1);
@@ -225,7 +353,7 @@ namespace 寝室反馈生成
                     string name = data[item.BedRoomNumber][item2];
                     res.Append(name);
                     res.Append('、');
-                    
+
                 }
                 if (item.BeiBuQiNumbers.Length != 0)
                 {
@@ -237,7 +365,7 @@ namespace 寝室反馈生成
                 {
                     string name = data[item.BedRoomNumber][item3];
                     res.Append(name + '、');
-                   
+
                 }
                 if (item.ChuangDanBuPingNumbers.Length != 0)
                 {
@@ -249,18 +377,34 @@ namespace 寝室反馈生成
                 {
                     string name = data[item.BedRoomNumber][item4];
                     res.Append(name + '、');
-                    
+
                 }
                 if (item.ChuangHaoNumber.Length != 0)
                 {
                     res = res.Remove(res.Length - 1, 1);
                     res.Append(s3);
-                    res.Append('；');
+                    res.Append('，');
                 }
-                string s = item.IfDiYouYin ? "地有印" : "";
+                string s = item.IfDiYouYin ? "地有印，" : "";
                 res.Append(s);
                 string ss = item.IfMenJingZang ? "门镜脏" : "";
                 res.Append(ss);
+                string sss = "";
+                switch (item.IfGoodOrOK)
+                {
+                    case BedRoomIfGoodOrOK.Good:
+                        sss = "整体好";
+                        break;
+                    case BedRoomIfGoodOrOK.OK:
+                        sss = "整体加强";
+                        break;
+                    case BedRoomIfGoodOrOK.None:
+                        sss = "";
+                        break;
+                    default:
+                        break;
+                }
+                res.Append(sss);
             }
             textBox1.Text += res;
         }
@@ -268,6 +412,21 @@ namespace 寝室反馈生成
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
             //无用
+        }
+
+        private void Clear_Click(object sender, EventArgs e)
+        {
+            foreach (Control item in this.Controls)
+            {
+                if(item is TextBox)
+                {
+                    item.Text = "";
+                }
+                else if(item is RadioButton||item is CheckBox)
+                {
+                    
+                }
+            }
         }
     }
 }
