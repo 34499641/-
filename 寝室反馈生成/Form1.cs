@@ -46,6 +46,9 @@ namespace 寝室反馈生成
             sr.Dispose();
             groupBox1.Visible = false;
             groupBox2.Visible = false;
+            textBox1.Visible = false;
+            Start.Visible = false;
+            Clear.Visible = false;
             #endregion
         }
         private void button1_Click(object sender, EventArgs e)
@@ -77,6 +80,9 @@ namespace 寝室反馈生成
             DataHandle.ChangeQSLText(data, LQS1, LQS2, LQS3, LQS4, LQS5, LQS6, LQS7, LQS8);
             groupBox1.Visible = true;
             groupBox2.Visible = true;
+            textBox1.Visible = true;
+            Start.Visible = true;
+            Clear.Visible = true;
         }
         #region 无用
         private void label3_Click(object sender, EventArgs e)
@@ -407,8 +413,9 @@ namespace 寝室反馈生成
                 res.Append(sss);
             }
             textBox1.Text += res;
+            res.Append("\n");
         }
-        string Result = "";
+        //string Result = "";
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
             //无用
@@ -416,15 +423,25 @@ namespace 寝室反馈生成
 
         private void Clear_Click(object sender, EventArgs e)
         {
-            foreach (Control item in this.Controls)
+            foreach (Control item in groupBox1.Controls)
             {
-                if(item is TextBox)
+                if (item is TextBox)
                 {
                     item.Text = "";
                 }
-                else if(item is RadioButton||item is CheckBox)
+                else if (item is GroupBox)
                 {
-                    
+                    foreach (var item2 in item.Controls)
+                    {
+                        if (item2 is RadioButton)
+                        {
+                            ((RadioButton)item2).Checked = false;
+                        }
+                        else if (item2 is CheckBox)
+                        {
+                            ((CheckBox)item2).Checked = false;
+                        }
+                    }
                 }
             }
         }

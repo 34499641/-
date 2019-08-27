@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.LQS1 = new System.Windows.Forms.Label();
             this.LQS2 = new System.Windows.Forms.Label();
             this.LQS3 = new System.Windows.Forms.Label();
@@ -135,6 +136,7 @@
             this.M6 = new System.Windows.Forms.CheckBox();
             this.M7 = new System.Windows.Forms.CheckBox();
             this.M8 = new System.Windows.Forms.CheckBox();
+            this.groupBox12 = new System.Windows.Forms.GroupBox();
             this.Start = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.Clear = new System.Windows.Forms.Button();
@@ -585,7 +587,7 @@
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Location = new System.Drawing.Point(12, 45);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(957, 496);
+            this.groupBox1.Size = new System.Drawing.Size(933, 496);
             this.groupBox1.TabIndex = 57;
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
@@ -1062,6 +1064,7 @@
             this.groupBox2.Controls.Add(this.M6);
             this.groupBox2.Controls.Add(this.M7);
             this.groupBox2.Controls.Add(this.M8);
+            this.groupBox2.Controls.Add(this.groupBox12);
             this.groupBox2.Location = new System.Drawing.Point(499, 0);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(216, 370);
@@ -1280,6 +1283,15 @@
             this.M8.Text = "门镜脏";
             this.M8.UseVisualStyleBackColor = true;
             // 
+            // groupBox12
+            // 
+            this.groupBox12.Location = new System.Drawing.Point(211, 3);
+            this.groupBox12.Name = "groupBox12";
+            this.groupBox12.Size = new System.Drawing.Size(200, 370);
+            this.groupBox12.TabIndex = 80;
+            this.groupBox12.TabStop = false;
+            this.groupBox12.Text = "groupBox12";
+            // 
             // Start
             // 
             this.Start.Location = new System.Drawing.Point(727, 16);
@@ -1292,15 +1304,17 @@
             // 
             // textBox1
             // 
+            this.textBox1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.textBox1.Location = new System.Drawing.Point(12, 415);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
+            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.textBox1.Size = new System.Drawing.Size(898, 108);
             this.textBox1.TabIndex = 65;
             // 
             // Clear
             // 
-            this.Clear.Location = new System.Drawing.Point(836, 19);
+            this.Clear.Location = new System.Drawing.Point(835, 16);
             this.Clear.Name = "Clear";
             this.Clear.Size = new System.Drawing.Size(75, 23);
             this.Clear.TabIndex = 66;
@@ -1322,8 +1336,9 @@
             this.Controls.Add(this.openFile);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "寝室反馈生成 Powered By Me";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -1464,6 +1479,7 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button Clear;
+        private System.Windows.Forms.GroupBox groupBox12;
     }
 }
 
