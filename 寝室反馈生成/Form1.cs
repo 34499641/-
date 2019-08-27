@@ -200,41 +200,56 @@ namespace 寝室反馈生成
         private void Start_Click(object sender, EventArgs e)
         {
             List<DataInFeedback> data22 = GetDatas();
-            string res = "";
+            StringBuilder res = new StringBuilder();
             foreach (var item in data22)
             {
                 string s1 = "被不齐";
                 string s2 = "床单不平";
                 string s3 = "床好";
-                res += (item.BedRoomNumber + "：");
+                res.Append(item.BedRoomNumber + "：");
                 foreach (var item2 in item.BeiBuQiNumbers)
                 {
                     string name = data[item.BedRoomNumber][item2];
-                    res += (name + '、');
-                    res = res.Remove(res.Length - 1);
-                    res += s1;
-                    res += '；';
+                    res.Append(name);
+                    res.Append('、');
+                    
                 }
-                
+                if (item.BeiBuQiNumbers.Length != 0)
+                {
+                    res = res.Remove(res.Length - 1, 1);
+                    res.Append(s1);
+                    res.Append('，');
+                }
                 foreach (var item3 in item.ChuangDanBuPingNumbers)
                 {
                     string name = data[item.BedRoomNumber][item3];
-                    res += (name + '、');
-                    res = res.Remove(res.Length - 1);
-                    res += s2;
-                    res += '；';
+                    res.Append(name + '、');
+                   
+                }
+                if (item.ChuangDanBuPingNumbers.Length != 0)
+                {
+                    res = res.Remove(res.Length - 1, 1);
+                    res.Append(s2);
+                    res.Append('，');
                 }
                 foreach (var item4 in item.ChuangHaoNumber)
                 {
                     string name = data[item.BedRoomNumber][item4];
-                    res += (name + '、');
-                    res = res.Remove(res.Length - 1);
-                    res += s3;
-                    res += '；';
+                    res.Append(name + '、');
+                    
                 }
-                
+                if (item.ChuangHaoNumber.Length != 0)
+                {
+                    res = res.Remove(res.Length - 1, 1);
+                    res.Append(s3);
+                    res.Append('；');
+                }
+                string s = item.IfDiYouYin ? "地有印" : "";
+                res.Append(s);
+                string ss = item.IfMenJingZang ? "门镜脏" : "";
+                res.Append(ss);
             }
-            MessageBox.Show(res);
+            textBox1.Text += res;
         }
         string Result = "";
         private void textBox4_TextChanged(object sender, EventArgs e)

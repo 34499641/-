@@ -70,7 +70,22 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.Start = new System.Windows.Forms.Button();
+            this.CH8 = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.CH7 = new System.Windows.Forms.TextBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.CH6 = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.CH5 = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.CH4 = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.CH3 = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.CH2 = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.CH1 = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.J7 = new System.Windows.Forms.RadioButton();
             this.H7 = new System.Windows.Forms.RadioButton();
@@ -120,22 +135,8 @@
             this.M6 = new System.Windows.Forms.CheckBox();
             this.M7 = new System.Windows.Forms.CheckBox();
             this.M8 = new System.Windows.Forms.CheckBox();
-            this.CH1 = new System.Windows.Forms.TextBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.CH2 = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.CH3 = new System.Windows.Forms.TextBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.CH4 = new System.Windows.Forms.TextBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.CH5 = new System.Windows.Forms.TextBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.CH6 = new System.Windows.Forms.TextBox();
-            this.label24 = new System.Windows.Forms.Label();
-            this.CH7 = new System.Windows.Forms.TextBox();
-            this.label25 = new System.Windows.Forms.Label();
-            this.CH8 = new System.Windows.Forms.TextBox();
-            this.label26 = new System.Windows.Forms.Label();
+            this.Start = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.groupBox10.SuspendLayout();
@@ -588,15 +589,141 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // Start
+            // CH8
             // 
-            this.Start.Location = new System.Drawing.Point(763, 423);
-            this.Start.Name = "Start";
-            this.Start.Size = new System.Drawing.Size(75, 23);
-            this.Start.TabIndex = 64;
-            this.Start.Text = "生成";
-            this.Start.UseVisualStyleBackColor = true;
-            this.Start.Click += new System.EventHandler(this.Start_Click);
+            this.CH8.Location = new System.Drawing.Point(399, 334);
+            this.CH8.Name = "CH8";
+            this.CH8.Size = new System.Drawing.Size(46, 21);
+            this.CH8.TabIndex = 78;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label26.Location = new System.Drawing.Point(451, 336);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(42, 16);
+            this.label26.TabIndex = 79;
+            this.label26.Text = "床好";
+            // 
+            // CH7
+            // 
+            this.CH7.Location = new System.Drawing.Point(399, 295);
+            this.CH7.Name = "CH7";
+            this.CH7.Size = new System.Drawing.Size(46, 21);
+            this.CH7.TabIndex = 76;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label25.Location = new System.Drawing.Point(451, 297);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(42, 16);
+            this.label25.TabIndex = 77;
+            this.label25.Text = "床好";
+            // 
+            // CH6
+            // 
+            this.CH6.Location = new System.Drawing.Point(399, 246);
+            this.CH6.Name = "CH6";
+            this.CH6.Size = new System.Drawing.Size(46, 21);
+            this.CH6.TabIndex = 74;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label24.Location = new System.Drawing.Point(451, 248);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(42, 16);
+            this.label24.TabIndex = 75;
+            this.label24.Text = "床好";
+            // 
+            // CH5
+            // 
+            this.CH5.Location = new System.Drawing.Point(399, 202);
+            this.CH5.Name = "CH5";
+            this.CH5.Size = new System.Drawing.Size(46, 21);
+            this.CH5.TabIndex = 72;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label23.Location = new System.Drawing.Point(451, 204);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(42, 16);
+            this.label23.TabIndex = 73;
+            this.label23.Text = "床好";
+            // 
+            // CH4
+            // 
+            this.CH4.Location = new System.Drawing.Point(399, 157);
+            this.CH4.Name = "CH4";
+            this.CH4.Size = new System.Drawing.Size(46, 21);
+            this.CH4.TabIndex = 70;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label22.Location = new System.Drawing.Point(451, 159);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(42, 16);
+            this.label22.TabIndex = 71;
+            this.label22.Text = "床好";
+            // 
+            // CH3
+            // 
+            this.CH3.Location = new System.Drawing.Point(399, 114);
+            this.CH3.Name = "CH3";
+            this.CH3.Size = new System.Drawing.Size(46, 21);
+            this.CH3.TabIndex = 68;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label21.Location = new System.Drawing.Point(451, 116);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(42, 16);
+            this.label21.TabIndex = 69;
+            this.label21.Text = "床好";
+            // 
+            // CH2
+            // 
+            this.CH2.Location = new System.Drawing.Point(399, 66);
+            this.CH2.Name = "CH2";
+            this.CH2.Size = new System.Drawing.Size(46, 21);
+            this.CH2.TabIndex = 66;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label20.Location = new System.Drawing.Point(451, 68);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(42, 16);
+            this.label20.TabIndex = 67;
+            this.label20.Text = "床好";
+            // 
+            // CH1
+            // 
+            this.CH1.Location = new System.Drawing.Point(399, 22);
+            this.CH1.Name = "CH1";
+            this.CH1.Size = new System.Drawing.Size(46, 21);
+            this.CH1.TabIndex = 64;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label19.Location = new System.Drawing.Point(451, 24);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(42, 16);
+            this.label19.TabIndex = 65;
+            this.label19.Text = "床好";
             // 
             // groupBox9
             // 
@@ -1152,147 +1279,30 @@
             this.M8.Text = "门镜脏";
             this.M8.UseVisualStyleBackColor = true;
             // 
-            // CH1
+            // Start
             // 
-            this.CH1.Location = new System.Drawing.Point(399, 22);
-            this.CH1.Name = "CH1";
-            this.CH1.Size = new System.Drawing.Size(46, 21);
-            this.CH1.TabIndex = 64;
+            this.Start.Location = new System.Drawing.Point(835, 19);
+            this.Start.Name = "Start";
+            this.Start.Size = new System.Drawing.Size(75, 23);
+            this.Start.TabIndex = 64;
+            this.Start.Text = "生成";
+            this.Start.UseVisualStyleBackColor = true;
+            this.Start.Click += new System.EventHandler(this.Start_Click);
             // 
-            // label19
+            // textBox1
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label19.Location = new System.Drawing.Point(451, 24);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(42, 16);
-            this.label19.TabIndex = 65;
-            this.label19.Text = "床好";
-            // 
-            // CH2
-            // 
-            this.CH2.Location = new System.Drawing.Point(399, 66);
-            this.CH2.Name = "CH2";
-            this.CH2.Size = new System.Drawing.Size(46, 21);
-            this.CH2.TabIndex = 66;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label20.Location = new System.Drawing.Point(451, 68);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(42, 16);
-            this.label20.TabIndex = 67;
-            this.label20.Text = "床好";
-            // 
-            // CH3
-            // 
-            this.CH3.Location = new System.Drawing.Point(399, 114);
-            this.CH3.Name = "CH3";
-            this.CH3.Size = new System.Drawing.Size(46, 21);
-            this.CH3.TabIndex = 68;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label21.Location = new System.Drawing.Point(451, 116);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(42, 16);
-            this.label21.TabIndex = 69;
-            this.label21.Text = "床好";
-            // 
-            // CH4
-            // 
-            this.CH4.Location = new System.Drawing.Point(399, 157);
-            this.CH4.Name = "CH4";
-            this.CH4.Size = new System.Drawing.Size(46, 21);
-            this.CH4.TabIndex = 70;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label22.Location = new System.Drawing.Point(451, 159);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(42, 16);
-            this.label22.TabIndex = 71;
-            this.label22.Text = "床好";
-            // 
-            // CH5
-            // 
-            this.CH5.Location = new System.Drawing.Point(399, 202);
-            this.CH5.Name = "CH5";
-            this.CH5.Size = new System.Drawing.Size(46, 21);
-            this.CH5.TabIndex = 72;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label23.Location = new System.Drawing.Point(451, 204);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(42, 16);
-            this.label23.TabIndex = 73;
-            this.label23.Text = "床好";
-            // 
-            // CH6
-            // 
-            this.CH6.Location = new System.Drawing.Point(399, 246);
-            this.CH6.Name = "CH6";
-            this.CH6.Size = new System.Drawing.Size(46, 21);
-            this.CH6.TabIndex = 74;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label24.Location = new System.Drawing.Point(451, 248);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(42, 16);
-            this.label24.TabIndex = 75;
-            this.label24.Text = "床好";
-            // 
-            // CH7
-            // 
-            this.CH7.Location = new System.Drawing.Point(399, 295);
-            this.CH7.Name = "CH7";
-            this.CH7.Size = new System.Drawing.Size(46, 21);
-            this.CH7.TabIndex = 76;
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label25.Location = new System.Drawing.Point(451, 297);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(42, 16);
-            this.label25.TabIndex = 77;
-            this.label25.Text = "床好";
-            // 
-            // CH8
-            // 
-            this.CH8.Location = new System.Drawing.Point(399, 334);
-            this.CH8.Name = "CH8";
-            this.CH8.Size = new System.Drawing.Size(46, 21);
-            this.CH8.TabIndex = 78;
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label26.Location = new System.Drawing.Point(451, 336);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(42, 16);
-            this.label26.TabIndex = 79;
-            this.label26.Text = "床好";
+            this.textBox1.Location = new System.Drawing.Point(12, 415);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(898, 108);
+            this.textBox1.TabIndex = 65;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(974, 535);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.Start);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.cbPath);
@@ -1440,6 +1450,7 @@
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.TextBox CH1;
         private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
