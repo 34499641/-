@@ -6,18 +6,24 @@ using System.Windows.Forms;
 
 namespace 寝室反馈生成
 {
-   // public enum BedRoomIfGoodOrOK
-    //{
-       // Good,
-        //OK
-    //}
+    /// <summary>
+    /// Good：整体好
+    /// OK：整体加强
+    /// None：无
+    /// </summary>
+    public enum BedRoomIfGoodOrOK
+    {
+        Good,
+        OK,
+        None
+    }
     /// <summary>
     /// 处理各种程序中的数据
     /// </summary>
     static class DataHandle
     {
         /// <summary>
-        /// 读取CSV文件到Dictionary<string, Dictionary<string, int>>中
+        /// 读取CSV文件到Dictionary中
         /// </summary>
         /// <param name="sr">一个指向CSV(逗号分隔符)的文件流</param>
         /// <returns></returns>
@@ -25,14 +31,14 @@ namespace 寝室反馈生成
         {
             Dictionary<string, Dictionary<char, string>> dic = new Dictionary<string, Dictionary<char, string>>();
             sr.ReadLine();//pass掉第一行数据
-            while (!sr.EndOfStream)
+            while (!sr.EndOfStream)//到文件尾前
             {
                 string s = sr.ReadLine();//读取单行数据,例:201808001,崔天植,A516,1
                 s = s.Remove(0, 10);//移除学号,例:崔天植,A516,1
                 string[] data = s.Split(',');//分割,例:崔天植  A516   1
                 if (!dic.ContainsKey(data[1]))//如果不存在，添加寝室号并添加床号
                 {
-                    Dictionary<char,string> temp = new Dictionary<char,string>();
+                    Dictionary<char, string> temp = new Dictionary<char, string>();
                     temp.Add(data[2].ToCharArray()[0], data[0]);
                     dic.Add(data[1], temp);
                 }
@@ -40,7 +46,6 @@ namespace 寝室反馈生成
                 {
                     dic[data[1]].Add(data[2].ToCharArray()[0], data[0]);
                 }
-
             }
             return dic;
         }
@@ -52,14 +57,14 @@ namespace 寝室反馈生成
         public static void ChangeQSLText(Dictionary<string, Dictionary<char, string>> dic, params Label[] labels)
         {
             // Dictionary<string, Dictionary<char,string>.Enumerator en = dic.GetEnumerator();
-            int i = 0;
-            foreach (var item in dic.Keys)
+            int i = 0;//迭代器变量
+            foreach (var item in dic.Keys)//遍历Key（寝室号）
             {
-                labels[i].Text = item;
+                labels[i].Text = item;//更改label的文本
                 i++;
             }
         }
-        public static string[] CreateCompleteFeedback(Dictionary<string, Dictionary<string, int>> dic, params DataInFeedback[] tbif) { return null; }
+        //public static string[] CreateCompleteFeedback(Dictionary<string, Dictionary<string, int>> dic, params DataInFeedback[] tbif) { return null; }
 
     }
     public class DataInFeedback
