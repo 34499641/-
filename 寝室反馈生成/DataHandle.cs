@@ -21,24 +21,24 @@ namespace 寝室反馈生成
         /// </summary>
         /// <param name="sr">一个指向CSV(逗号分隔符)的文件流</param>
         /// <returns></returns>
-        public static Dictionary<string, Dictionary<string, int>> ReadCSV(StreamReader sr)
+        public static Dictionary<string, Dictionary<char, string>> ReadCSV(StreamReader sr)
         {
-            Dictionary<string, Dictionary<string, int>> dic = new Dictionary<string, Dictionary<string, int>>();
+            Dictionary<string, Dictionary<char, string>> dic = new Dictionary<string, Dictionary<char, string>>();
             sr.ReadLine();//pass掉第一行数据
             while (!sr.EndOfStream)
             {
                 string s = sr.ReadLine();//读取单行数据,例:201808001,崔天植,A516,1
                 s = s.Remove(0, 10);//移除学号,例:崔天植,A516,1
                 string[] data = s.Split(',');//分割,例:崔天植  A516   1
-                if (!dic.ContainsKey(data[1]))
+                if (!dic.ContainsKey(data[1]))//如果不存在，添加寝室号并添加床号
                 {
-                    Dictionary<string, int> temp = new Dictionary<string, int>();
-                    temp.Add(data[0], Convert.ToInt32(data[2]));
+                    Dictionary<char,string> temp = new Dictionary<char,string>();
+                    temp.Add(data[2].ToCharArray()[0], data[0]);
                     dic.Add(data[1], temp);
                 }
-                else
+                else//如果存在，添加床号
                 {
-                    dic[data[1]].Add(data[0], Convert.ToInt32(data[2]));
+                    dic[data[1]].Add(data[2].ToCharArray()[0], data[0]);
                 }
 
             }
@@ -49,15 +49,14 @@ namespace 寝室反馈生成
         /// </summary>
         /// <param name="dic">寝室号字典</param>
         /// <param name="labels">Label控件</param>
-        public static void ChangeQSLText(Dictionary<string, Dictionary<string, int>> dic, params Label[] labels)
+        public static void ChangeQSLText(Dictionary<string, Dictionary<char, string>> dic, params Label[] labels)
         {
-            Dictionary<string, Dictionary<string, int>>.Enumerator en = dic.GetEnumerator();
-            for (int i = 0; i < dic.Count; i++)
+            // Dictionary<string, Dictionary<char,string>.Enumerator en = dic.GetEnumerator();
+            int i = 0;
+            foreach (var item in dic.Keys)
             {
-                if (en.MoveNext())
-                {
-                    labels[i].Text = en.Current.Key;
-                }
+                labels[i].Text = item;
+                i++;
             }
         }
         public static string[] CreateCompleteFeedback(Dictionary<string, Dictionary<string, int>> dic, params DataInFeedback[] tbif) { return null; }
@@ -90,6 +89,6 @@ namespace 寝室反馈生成
         public bool IfDiYouYin { get; set; }
         public bool IfMenJingZang { get; set; }
         public bool IfGoodOrOK { get; set; }
-
+        public char[] ChuangHaoNumber { get; set; }
     }
 }
